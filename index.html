@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica con Class</title>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- SECTION I -->
+    <div class="grid md:grid-cols-3">
+
+      <form class="flex flex-col shadow-lg rounded-lg border-2 m-4 p-4">
+        <p class="text-center font-bold underline decoration-double text-sky-600">Registra tus Cuentas de Gastos</p>
+        <input type="text" placeholder="Nombre de la Cuenta" name="accountName" id="input-name"
+          class="block border-b-2 border-r-2 rounded-lg font-bold mt-4 p-2 placeholder:font-medium focus:border-sky-600 focus:outline-none">
+        <input type="text" placeholder="Gasto $" name="accountExpense" id="input-expense"
+          class="block border-b-2 border-r-2 rounded-lg font-bold mt-4 p-2 placeholder:font-medium focus:border-sky-600 focus:outline-none">
+        <div class="flex justify-center mt-4">
+          <button type="submit" id="btn-register"
+            class="w-2/5 rounded-lg bg-sky-600 font-bold text-white shadow-md py-2 hover:bg-sky-500 disabled:opacity-50 disabled:cursor-not-allowed" disabled><i
+              class="fa-solid fa-circle-plus"></i> Registrar</button>
+        </div>
+      </form>
+
+      <div class="col-span-2 shadow-lg rounded-lg border-2 m-4 p-4">
+        <p class="text-center font-bold underline decoration-double text-sky-600 mb-3">Reporte</p>
+        <div class="grid grid-cols-6 gap-6 font-bold">
+          <div class="col-span-3">Cuenta</div>
+          <div class="col-span-2">Gasto</div>
+          <div></div>
+        </div>
+        <div id="print-report">
+
+          <!-- --- printReport --- -->
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script type="module" src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/bc0a7d8895.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
